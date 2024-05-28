@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Books</title>
+    <style>
+        /* CSS styles can go here */
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    background-color: #efd39d;
+    background-image:url('lastbackground.png');
+  }
+  header {
+    background-color: bisque;
+    opacity: 0.7;
+    color: #f19d8f;
+    padding: 10px 0;
+    text-align: center;
+    font-size: large;
+    text-shadow: 2px 2px 2px #333;
+    font-family: "Times New Roman";
+    scroll-behavior: auto;
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding-bottom: 10%;
+            overflow: hidden;
+        }
+        .book {
+            background-color: antiquewhite;
+            opacity: 0.8;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .book img {
+            float: left;
+            width: 150px;
+            height: 180px;
+            border-radius: 5px;
+          
+        }
+ 
+        .book h2 {
+            margin-top: 0;
+        }
+        h2,p{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .read-btn {
+    background-color: #fec9ac;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 190px;
+  }
+  li a:hover {
+            background-color: white;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    
+  <header>
+    <h1>Online Reading</h1>
+    <nav>
+      <ul>
+       
+        <li><a href="mainpage.html">Home</a></li>
+        <li><a href="forms.html">Sign in</a></li>
+        <li><a href="trending.html">Trending</a></li>
+        <li><a href="lists.html>">Lists</a></li>
+        <li><a href="table.html">Prices</a></li>  
+        <li><a href="about.html">About</a></li>
+        
+        
+      </ul>
+    </nav>
+  </header>
+      <br>
+    <div class="container">
+        <div class="book">
+            <img src="tearsmith.jpg" alt="Book 1">
+            <h2 >Tearsmith</h2>
+            <p>Author: by Erin Doom</p>
+            <p>Price: $5</p>
+            <p>Someone marked as Want to Read 43 seconds ago</p>
+            <button class="read-btn">Add to Cart</button>
+        </div>
+
+
+        <div class="book">
+          <img src="C:\Users\Leen\OneDrive\سطح المكتب\project website\thetao.jpg" alt="Book 2">
+          <h2>The Tao of Physics</h2>
+          <p>Author: by Fritjof Capra</p>
+          <p>Price: $8</p>
+          <p>Someone marked as Want to Read 2 minutes ago.</p>
+          <button class="read-btn">Add to Cart</button>
+
+      </div>
+      <div class="book">
+        <img src="C:\Users\Leen\OneDrive\سطح المكتب\project website\wetook.jpg" alt="Book 3">
+        <h2>We took to the woods</h2>
+        <p>Author: by Louise Dickinson Rich</p>
+        <p>Price: $10</p>
+        <p>Someone marked as Want to Read 4 minutes ago</p>
+        <button class="read-btn">Add to Cart</button>
+    </div>
+        
+    </div>
+</body>
+</html>

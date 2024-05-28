@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+    </head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #f2e1e1;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #efd39d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor:auto;
+}
+
+input[type=submit]:hover {
+  background-color: #f4f4f4;
+}
+form{
+    color: beige;
+    text-shadow:2px 2px 2px #333;
+}
+
+fieldset{
+    border: #f4f4f4;
+    outline: #ebda86;
+  border-radius: 5px;
+  background-color: #fcb7ab;
+  position: fixed;
+ margin: 50px 100px 200px 480px;
+ position: fixed;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+legend{
+   font-family: 'Times New Roman', Times, serif;
+   color: beige;
+   text-shadow:2px 2px 2px #333; 
+}
+select{
+    background-color: white;
+
+}
+option,value {
+    color: #fcb7ab;
+    text-shadow:2px 2px 2px #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+   
+    margin: 0;
+    padding: 0;
+    background-color: #efd39d;
+    background-image:url('lastbackground.png');
+  }
+  
+  header {
+    background-color: bisque;
+    opacity: 0.7;
+    color: #f19d8f;
+    padding: 10px 0;
+    text-align: center;
+    font-size: large;
+    text-shadow: 2px 2px 2px #333;
+    font-family: "Times New Roman";
+    scroll-behavior: auto;
+    
+  }
+  
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  img.a{
+ 
+    border: 5px #fcb7ab;
+  }
+  li a:hover {
+            background-color: white;
+            opacity: 0.5;
+        }
+</style>
+<body>
+    <script src="submitcheck.js"></script>
+
+    <header>
+      <h1>Online Reading</h1>
+      <nav>
+        <ul>
+         
+          <li><a href="mainpage.html">Home</a></li>
+          <li><a href="forms.html">Sign in</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="lists.html>">Lists</a></li>
+          <li><a href="table.html">Prices</a></li>  
+          <li><a href="about.html">About</a></li>
+          
+          
+        </ul>
+      </nav>
+    </header>
+
+<div id="error"></div>
+<fieldset >
+    <legend>Sign in</legend>
+    <form action="mainpage.html" onsubmit="return validateForm()" id="form">
+        First Name : <input type="text" id="fname" name="fname" onsubmit="return validateForm()" ><br>
+        Last Name : <input type="text" id="lname" name="lname" onsubmit="return validateForm()" ><br>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Saudi Arabia">Saudi Arabia</option>
+      <option value="UAE">UAE</option>
+      <option value="Kwait">Kuwait</option>
+      <option value="Bahrain">Bahrain</option>
+      <option value="Qatar">Qatar</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</fieldset>
+
+</body>
+</html>
